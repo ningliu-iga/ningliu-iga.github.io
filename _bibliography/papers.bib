@@ -3,113 +3,111 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@article{liu2024disentangled,
+  abbr={Arxiv},
+  title={Disentangled Representation Learning for Parametric Partial Differential Equations},
+  author={Liu, Ning and Zhang, Lu and Gao, Tian and Yu, Yue},
+  journal={arXiv preprint arXiv:2410.02136},
+  year={2024},
+  pdf={https://arxiv.org/abs/2410.02136},
+  code={https://github.com/hanjq17/SGNN},
+  abstract = {Neural operators (NOs) have demonstrated remarkable success in learning mappings between function spaces, serving as efficient approximators for the forward solutions of complex physical systems governed by partial differential equations (PDEs). However, while effective as black-box solvers, they offer limited insight into the underlying physical mechanism, due to the lack of interpretable representations of the physical parameters that drive the system. To tackle this challenge, we propose a new paradigm for learning disentangled representations from neural operator parameters, thereby effectively solving an inverse problem. Specifically, we introduce DisentangO, a novel hyper-neural operator architecture designed to unveil and disentangle the latent physical factors of variation embedded within the black-box neural operator parameters. At the core of DisentangO is a multi-task neural operator architecture that distills the varying parameters of the governing PDE through a task-wise adaptive layer, coupled with a hierarchical variational autoencoder that disentangles these variations into identifiable latent factors. By learning these disentangled representations, our model not only enhances physical interpretability but also enables more robust generalization across diverse physical systems. Empirical evaluations across supervised, semi-supervised, and unsupervised learning contexts show that DisentangO effectively extracts meaningful and interpretable latent features, bridging the divide between predictive performance and physical understanding in neural operator frameworks.},
   selected={true},
-  inspirehep_id = {3255}
+  preview={DisentangO.png}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{yu2024nonlocal,
+abbr={NeurIPS},
+award={Spotlight},
+honor={Spotlight paper},
+title={Nonlocal attention operator: Materializing hidden knowledge towards interpretable physics discovery},
+author={Yu, Yue and Liu, Ning and Lu, Fei and Gao, Tian and Jafarzadeh, Siavash and Silling, Stewart},
+booktitle={Thirty-Eighth Conference on Neural Information Processing Systems},
+year={2024},
+pdf={https://arxiv.org/abs/2408.07307},
+code={https://github.com/fishmoon1234/NAO},
+abstract = {Despite the recent popularity of attention-based neural architectures in core AI fields like natural language processing (NLP) and computer vision (CV), their potential in modeling complex physical systems remains under-explored. Learning problems in physical systems are often characterized as discovering operators that map between function spaces based on a few instances of function pairs. This task frequently presents a severely ill-posed PDE inverse problem. In this work, we propose a novel neural operator architecture based on the attention mechanism, which we coin Nonlocal Attention Operator (NAO), and explore its capability towards developing a foundation physical model. In particular, we show that the attention mechanism is equivalent to a double integral operator that enables nonlocal interactions among spatial tokens, with a data-dependent kernel characterizing the inverse mapping from data to the hidden parameter field of the underlying operator. As such, the attention mechanism extracts global prior information from training data generated by multiple systems, and suggests the exploratory space in the form of a nonlinear kernel map. Consequently, NAO can address ill-posedness and rank deficiency in inverse PDE problems by encoding regularization and achieving generalizability. We empirically demonstrate the advantages of NAO over baseline neural models in terms of generalizability to unseen data resolutions and system states. Our work not only suggests a novel neural operator architecture for learning interpretable foundation models of physical systems, but also offers a new perspective towards understanding the attention mechanism.},
+selected={true},
+preview={NAO.png}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{liu2024large,
+  abbr={Arxiv},
+  title={Large language models, physics-based modeling, experimental measurements: the trinity of data-scarce learning of polymer properties},
+  author={Liu, Ning and Jafarzadeh, Siavash and Lattimer, Brian Y and Ni, Shuna and Lua, Jim and Yu, Yue},
+  journal={arXiv preprint arXiv:2407.02770},
+  year={2024},
+  pdf={https://arxiv.org/abs/2407.02770},
+  code={https://github.com/ningliu-iga/TrinityLLM},
+  abstract = {Large language models (LLMs) bear promise as a fast and accurate material modeling paradigm for evaluation, analysis, and design. Their vast number of trainable parameters necessitates a wealth of data to achieve accuracy and mitigate overfitting. However, experimental measurements are often limited and costly to obtain in sufficient quantities for finetuning. To this end, we present a physics-based training pipeline that tackles the pathology of data scarcity. The core enabler is a physics-based modeling framework that generates a multitude of synthetic data to align the LLM to a physically consistent initial state before finetuning. Our framework features a two-phase training strategy: (1) utilizing the large-in-amount while less accurate synthetic data for supervised pretraining, and (2) finetuning the phase-1 model with limited experimental data. We empirically demonstrate that supervised pretraining is vital to obtaining accurate finetuned LLMs, via the lens of learning polymer flammability metrics where cone calorimeter data is sparse.},
+  selected={true},
+  preview={trinity.png}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{liuharnessing,
+  abbr={ICML},
+  award={Spotlight},
+  honor={Spotlight paper [Top 3.5%]},
+  title={Harnessing the Power of Neural Operators with Automatically Encoded Conservation Laws},
+  author={Liu, Ning and Fan, Yiming and Zeng, Xianyi and Kl{\"o}wer, Milan and Zhang, Lu and Yu, Yue},
+  booktitle={Forty-first International Conference on Machine Learning},
+  year={2024},
+  pdf={https://proceedings.mlr.press/v235/liu24p.html},
+  code={https://github.com/ningliu-iga/clawNO},
+  abstract = {Neural operators (NOs) have emerged as effective tools for modeling complex physical systems in scientific machine learning. In NOs, a central characteristic is to learn the governing physical laws directly from data. In contrast to other machine learning applications, partial knowledge is often known a priori about the physical system at hand whereby quantities such as mass, energy and momentum are exactly conserved. Currently, NOs have to learn these conservation laws from data and can only approximately satisfy them due to finite training data and random noise. In this work, we introduce conservation law-encoded neural operators (clawNOs), a suite of NOs that endow inference with automatic satisfaction of such conservation laws. ClawNOs are built with a divergence-free prediction of the solution field, with which the continuity equation is automatically guaranteed. As a consequence, clawNOs are compliant with the most fundamental and ubiquitous conservation laws essential for correct physical consistency. As demonstrations, we consider a wide variety of scientific applications ranging from constitutive modeling of material deformation, incompressible fluid dynamics, to atmospheric simulation. ClawNOs significantly outperform the state-of-the-art NOs in learning efficacy, especially in small-data regimes.},
+  selected={true},
+  preview={clawNO.png}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{jafarzadeh2024peridynamic,
+  abbr={CMAME},
+  title={Peridynamic neural operators: A data-driven nonlocal constitutive model for complex material responses},
+  author={Jafarzadeh, Siavash and Silling, Stewart and Liu, Ning and Zhang, Zhongqiang and Yu, Yue},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  volume={425},
+  pages={116914},
+  year={2024},
+  publisher={Elsevier},
+  pdf={https://www.sciencedirect.com/science/article/abs/pii/S0045782524001701},
+  abstract = {Neural operators, which can act as implicit solution operators of hidden governing equations, have recently become popular tools for learning the responses of complex real-world physical systems. Nevertheless, most neural operator applications have thus far been data-driven and neglect the intrinsic preservation of fundamental physical laws in data. In this work, we introduce a novel integral neural operator architecture called the Peridynamic Neural Operator (PNO) that learns a nonlocal constitutive law from data. This neural operator provides a forward model in the form of state-based peridynamics, with objectivity and momentum balance laws automatically guaranteed. As applications, we demonstrate the expressivity and efficacy of our model in learning complex material behaviors from both synthetic and experimental data sets. We also compare the performances with baseline models that use predefined constitutive laws. We show that, owing to its ability to capture complex responses, our learned neural operator achieves improved accuracy and efficiency. Moreover, by preserving the essential physical laws within the neural network architecture, the PNO is robust in treating noisy data. The method shows generalizability to different domain configurations, external loadings, and discretizations.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{liu2024deep,
+  title={Deep Neural Operator Enabled Digital Twin Modeling for Additive Manufacturing},
+  author={Liu, Ning and Li, Xuxiao and Rajanna, Manoj R and Reutzel, Edward W and Sawyer, Brady and Rao, Prahalada and Lua, Jim and Phan, Nam and Yu, Yue},
+  journal={Advances in Computational Science and Engineering},
+  volume={2(3)},
+  pages={174-201},
+  year={2024},
+  publisher={AIMS},
+  pdf={https://www.aimsciences.org/article/doi/10.3934/acse.2024010},
+  abstract = {A digital twin (DT), with the components of a physics-based model, a data-driven model, and a machine learning (ML) enabled efficient surrogate model, behaves as a virtual twin of the real-world physical process. In terms of Laser Powder Bed Fusion (L-PBF) based additive manufacturing (AM), a DT can predict the current and future states of the melt pool and the resulting defects corresponding to the input laser parameters, evolve itself by assimilating in-situ sensor data, and optimize the laser parameters to mitigate defect formation. In this paper, we present a deep neural operator enabled DT framework for closed-loop feedback control of the L-PBF process. This is accomplished by building a physics-based computational model to accurately represent the melt pool states, an efficient Fourier neural operator (FNO) based surrogate model to approximate the melt pool solution field, followed by a physics-based procedure to extract information from the computed melt pool simulation that can further be correlated to the defect quantities of interest (e.g., surface roughness). An optimization algorithm is then exercised to control laser input and minimize defects. On the other hand, the constructed DT also evolves with the physical twin via offline finetuning and online material calibration. For instance, the probabilistic distribution of laser absorptivity can be updated to match the real-time captured thermal image data. Finally, a probabilistic framework is adopted for uncertainty quantification. The developed DT is envisioned to guide the AM process and facilitate high-quality manufacturing in L-PBF-based metal AM.},
+  preview={dt.png}
+}
+
+@inproceedings{liu2024domain,
+  abbr={NeurIPS},
+  title={Domain agnostic fourier neural operators},
+  author={Liu, Ning and Jafarzadeh, Siavash and Yu, Yue},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2023},
+  pdf={https://proceedings.neurips.cc/paper_files/paper/2023/hash/940a7634dab556b67af15bacd337f7db-Abstract-Conference.html},
+  code={https://github.com/ningliu-iga/DAFNO},
+  abstract = {Fourier neural operators (FNOs) can learn highly nonlinear mappings between function spaces, and have recently become a popular tool for learning responses of complex physical systems. However, to achieve good accuracy and efficiency, FNOs rely on the Fast Fourier transform (FFT), which is restricted to modeling problems on rectangular domains. To lift such a restriction and permit FFT on irregular geometries as well as topology changes, we introduce domain agnostic Fourier neural operator (DAFNO), a novel neural operator architecture for learning surrogates with irregular geometries and evolving domains. The key idea is to incorporate a smoothed characteristic function in the integral layer architecture of FNOs, and leverage FFT to achieve rapid computations, in such a way that the geometric information is explicitly encoded in the architecture. In our empirical evaluation, DAFNO has achieved state-of-the-art accuracy as compared to baseline neural operator models on two benchmark datasets of material modeling and airfoil simulation. To further demonstrate the capability and generalizability of DAFNO in handling complex domains with topology changes, we consider a brittle material fracture evolution problem. With only one training crack simulation sample, DAFNO has achieved generalizability to unseen loading scenarios and substantially different crack patterns from the trained scenario. Our code and data accompanying this paper are available at https://github.com/ningliu-iga/DAFNO.},
+  selected={true},
+  preview={dafno.png}
+}
+
+@inproceedings{liu2023ino,
+  abbr={AISTATS},
+  title={INO: Invariant neural operators for learning complex physical systems with momentum conservation},
+  author={Liu, Ning and Yu, Yue and You, Huaiqian and Tatikola, Neeraj},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  year={2023},
+  organization={PMLR},
+  pdf={https://proceedings.mlr.press/v206/liu23f.html},
+  code={https://github.com/ningliu-iga/invariant_neural_operators},
+  abstract = {Neural operators, which emerge as implicit solution operators of hidden governing equations, have recently become popular tools for learning responses of complex real-world physical systems. Nevertheless, the majority of neural operator applications has thus far been data-driven, which neglects the intrinsic preservation of fundamental physical laws in data. In this paper, we introduce a novel integral neural operator architecture, to learn physical models with fundamental conservation laws automatically guaranteed. In particular, by replacing the frame-dependent position information with its invariant counterpart in the kernel space, the proposed neural operator is designed to be translation- and rotation-invariant, and consequently abides by the conservation laws of linear and angular momentums. As applications, we demonstrate the expressivity and efficacy of our model in learning complex material behaviors from both synthetic and experimental datasets, and show that, by automatically satisfying these essential physical laws, our learned neural operator is not only generalizable in handling translated and rotated datasets, but also achieves improved accuracy and efficiency from the baseline neural operator models.},
+  selected={true},
+  preview={ino.png}
 }
