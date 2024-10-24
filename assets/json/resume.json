@@ -29,7 +29,11 @@
       "startDate": "2018-09-01",
       "endDate": "Present",
       "summary": "Lead the development and deployment of novel machine learning models to accelerate the prediction of multi-physics simulations, such as using neural operators and variational autoencoders to learn aircraft aerodynamics, process modeling of composite curing, and applying large language models (LLM) to discover optimal polymer/composite structures for defense applications. Another line of work is on building digital twins for additive manufacturing.",
-      "highlights": ["Write small-business research proposals (e.g., SBIR/STTR) and develop teaming strategies with academic collaborators;", " Develop and implement novel numerical methods for computational mechanics modeling;", "Supervise team members and lead quarterly reviews with technical team and sponsors;", "Publish high-quality papers on top-tier journals/conferences."]
+      "highlights": [
+        "Write small-business research proposals (e.g., SBIR/STTR) and develop teaming strategies with academic collaborators;", 
+        "Develop and implement novel numerical methods for computational mechanics modeling;", 
+        "Supervise team members and lead quarterly reviews with technical team and sponsors;", 
+        "Publish high-quality papers on top-tier journals/conferences."]
     }
   ],
   "volunteer": [],
@@ -70,14 +74,7 @@
       "name": "Programming",
       "level": "Master",
       "icon": "",
-      "keywords": [
-        "Python",
-        "C++",
-        "FORTRAN",
-        "SQL",
-        "LaTeX",
-        "Git"
-      ]
+      "keywords": ["Python", "C++", "FORTRAN", "SQL", "LaTeX", "Git"]
     }
   ],
   "languages": [],
