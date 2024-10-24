@@ -46,7 +46,7 @@
       "highlights": [
         "Developed supervised pretraining to align LLM to a physically consistent initial state via physics-based prior knowledge;", 
         "Built an end-to-end LLM product with limited data from input chemical structures to polymer flammability prediction;",
-        "Secured over 2M funding for sponsors."
+        "Secured over 2M funding from sponsors."
       ]
     },
     {
@@ -69,7 +69,7 @@
       "url": "https://gem-innovation.com/",
       "startDate": "2018-09-01",
       "endDate": "2019-12-31",
-      "summary": "Research and software development on computational mechanics (isogeometric analysis, time- and frequency-domain metallic fatigue, etc.) and machine learning."
+      "summary": "Research and software development on machine learning and computational mechanics (isogeometric analysis, time- and frequency-domain metallic fatigue, etc.)."
     }
   ],
   "volunteer": [],
