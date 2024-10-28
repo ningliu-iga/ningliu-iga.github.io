@@ -30,9 +30,9 @@
       "endDate": "Present",
       "summary": "Lead the development and deployment of novel machine learning models to accelerate the prediction of multi-physics simulations, such as using neural operators and variational autoencoders to learn aircraft aerodynamics, process modeling of composite curing, and applying large language models (LLM) to discover optimal polymer/composite structures for defense applications. Another line of work is on building digital twins for additive manufacturing.",
       "highlights": [
-        "Write small-business research proposals (e.g., SBIR/STTR) and develop teaming strategies with academic collaborators;", 
-        "Develop and implement novel numerical methods for computational mechanics modeling;", 
-        "Supervise team members and lead quarterly reviews with technical team and sponsors;", 
+        "Write small-business research proposals (e.g., SBIR/STTR) and develop teaming strategies with academic collaborators;",
+        "Develop and implement novel numerical methods for computational mechanics modeling;",
+        "Supervise team members and lead quarterly reviews with technical team and sponsors;",
         "Publish high-quality papers on top-tier journals/conferences."
       ]
     },
@@ -44,7 +44,7 @@
       "endDate": "2024-09-30",
       "summary": "Develop and deploy state-of-the-art ML architectures for reduced-order modeling of multi-physics simulations; Developed a large molecular language model for polymer property prediction.",
       "highlights": [
-        "Developed supervised pretraining to align LLM to a physically consistent initial state via physics-based prior knowledge;", 
+        "Developed supervised pretraining to align LLM to a physically consistent initial state via physics-based prior knowledge;",
         "Built an end-to-end LLM product with limited data from input chemical structures to polymer flammability prediction;",
         "Secured over 2M funding from sponsors."
       ]
