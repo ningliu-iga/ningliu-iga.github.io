@@ -19,4 +19,4 @@ I am a Machine Learning Scientist with over six years of experience developing a
 
 I earned my Ph.D. from the University of Michigan - Ann Arbor, advised by [Dr. Ann E. Jeffers](https://cee.engin.umich.edu/people/jeffers-ann/), and am actively collaborating with [Dr. Yue Yu](https://www.lehigh.edu/~yuy214/) at Lehigh University. Additionally, I hold dual M.S. degrees in Mechanical Engineering and Civil Engineering, both from the University of Michigan. I am passionate about advancing the field of machine learning, and my work has been published in top-tier conference venues such as ICML, NeurIPS, and AISTATS.
 
-Welcome to drop me an email if you want to discuss or collaborate!
+Hit me up if you are interested in discussing or exploring potential collaboration opportunities!
