@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The preprint of our paper <a href="https://arxiv.org/abs/2410.02136" target="_blank">Disentangled Representation Learning for Parametric Partial Differential Equations</a> is available on Arxiv!
+The preprint of our paper <a href="https://arxiv.org/abs/2410.02136" target="_blank">Disentangled Representation Learning for Parametric Partial Differential Equations</a> is available on Arxiv.

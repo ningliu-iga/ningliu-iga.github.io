@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/940a7634dab556b67af15bacd337f7db-Abstract-Conference.html" target="_blank">Domain Agnostic Fourier Neural Operators</a> has been accepted by NeurIPS2023!
+Our paper <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/940a7634dab556b67af15bacd337f7db-Abstract-Conference.html" target="_blank">Domain Agnostic Fourier Neural Operators</a> has been accepted by NeurIPS2023.
