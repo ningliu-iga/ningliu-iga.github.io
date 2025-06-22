@@ -3,17 +3,30 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{liu2024disentangled,
-  abbr={Arxiv},
-  title={Disentangled Representation Learning for Parametric Partial Differential Equations},
-  author={Liu, Ning and Zhang, Lu and Gao, Tian and Yu, Yue},
-  journal={arXiv preprint arXiv:2410.02136},
-  year={2024},
-  pdf={https://arxiv.org/abs/2410.02136},
-  code={https://github.com/hanjq17/SGNN},
-  abstract = {Neural operators (NOs) have demonstrated remarkable success in learning mappings between function spaces, serving as efficient approximators for the forward solutions of complex physical systems governed by partial differential equations (PDEs). However, while effective as black-box solvers, they offer limited insight into the underlying physical mechanism, due to the lack of interpretable representations of the physical parameters that drive the system. To tackle this challenge, we propose a new paradigm for learning disentangled representations from neural operator parameters, thereby effectively solving an inverse problem. Specifically, we introduce DisentangO, a novel hyper-neural operator architecture designed to unveil and disentangle the latent physical factors of variation embedded within the black-box neural operator parameters. At the core of DisentangO is a multi-task neural operator architecture that distills the varying parameters of the governing PDE through a task-wise adaptive layer, coupled with a hierarchical variational autoencoder that disentangles these variations into identifiable latent factors. By learning these disentangled representations, our model not only enhances physical interpretability but also enables more robust generalization across diverse physical systems. Empirical evaluations across supervised, semi-supervised, and unsupervised learning contexts show that DisentangO effectively extracts meaningful and interpretable latent features, bridging the divide between predictive performance and physical understanding in neural operator frameworks.},
+@inproceedings{liu2025nips,
+abbr={ICML},
+title={Neural Interpretable PDEs: Harmonizing Fourier Insights with Attention for Scalable and Interpretable Physics Discovery},
+author={Liu, Ning and Yu, Yue},
+booktitle={Forty-Second International Conference on Machine Learning},
+year={2025},
+pdf={https://arxiv.org/abs/2505.23106},
+code={https://github.com/fishmoon1234/Nonlocal-Attention-Operator},
+abstract = {Attention mechanisms have emerged as transformative tools in core AI domains such as natural language processing and computer vision. Yet, their largely untapped potential for modeling intricate physical systems presents a compelling frontier. Learning such systems often entails discovering operators that map between functional spaces using limited instances of function pairs -- a task commonly framed as a severely ill-posed inverse PDE problem. In this work, we introduce Neural Interpretable PDEs (NIPS), a novel neural operator architecture that builds upon and enhances Nonlocal Attention Operators (NAO) in both predictive accuracy and computational efficiency. NIPS employs a linear attention mechanism to enable scalable learning and integrates a learnable kernel network that acts as a channel-independent convolution in Fourier space. As a consequence, NIPS eliminates the need to explicitly compute and store large pairwise interactions, effectively amortizing the cost of handling spatial interactions into the Fourier transform. Empirical evaluations demonstrate that NIPS consistently surpasses NAO and other baselines across diverse benchmarks, heralding a substantial leap in scalable, interpretable, and efficient physics learning.},
+selected={true},
+preview={nips.png}
+}
+
+@inproceedings{liu2024domain,
+  abbr={NeurIPS},
+  title={Domain agnostic fourier neural operators},
+  author={Liu, Ning and Jafarzadeh, Siavash and Yu, Yue},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2023},
+  pdf={https://proceedings.neurips.cc/paper_files/paper/2023/hash/940a7634dab556b67af15bacd337f7db-Abstract-Conference.html},
+  code={https://github.com/ningliu-iga/DAFNO},
+  abstract = {Fourier neural operators (FNOs) can learn highly nonlinear mappings between function spaces, and have recently become a popular tool for learning responses of complex physical systems. However, to achieve good accuracy and efficiency, FNOs rely on the Fast Fourier transform (FFT), which is restricted to modeling problems on rectangular domains. To lift such a restriction and permit FFT on irregular geometries as well as topology changes, we introduce domain agnostic Fourier neural operator (DAFNO), a novel neural operator architecture for learning surrogates with irregular geometries and evolving domains. The key idea is to incorporate a smoothed characteristic function in the integral layer architecture of FNOs, and leverage FFT to achieve rapid computations, in such a way that the geometric information is explicitly encoded in the architecture. In our empirical evaluation, DAFNO has achieved state-of-the-art accuracy as compared to baseline neural operator models on two benchmark datasets of material modeling and airfoil simulation. To further demonstrate the capability and generalizability of DAFNO in handling complex domains with topology changes, we consider a brittle material fracture evolution problem. With only one training crack simulation sample, DAFNO has achieved generalizability to unseen loading scenarios and substantially different crack patterns from the trained scenario. Our code and data accompanying this paper are available at https://github.com/ningliu-iga/DAFNO.},
   selected={true},
-  preview={DisentangO2.png}
+  preview={dafno.png}
 }
 
 @inproceedings{yu2024nonlocal,
@@ -25,7 +38,7 @@ author={Yu, Yue and Liu, Ning and Lu, Fei and Gao, Tian and Jafarzadeh, Siavash 
 booktitle={Thirty-Eighth Conference on Neural Information Processing Systems},
 year={2024},
 pdf={https://proceedings.neurips.cc/paper_files/paper/2024/hash/ce5b4f79f4752b7f8e983a80ebcd9c7a-Abstract-Conference.html},
-code={https://github.com/fishmoon1234/NAO},
+code={https://github.com/fishmoon1234/Nonlocal-Attention-Operator},
 abstract = {Despite the recent popularity of attention-based neural architectures in core AI fields like natural language processing (NLP) and computer vision (CV), their potential in modeling complex physical systems remains under-explored. Learning problems in physical systems are often characterized as discovering operators that map between function spaces based on a few instances of function pairs. This task frequently presents a severely ill-posed PDE inverse problem. In this work, we propose a novel neural operator architecture based on the attention mechanism, which we coin Nonlocal Attention Operator (NAO), and explore its capability towards developing a foundation physical model. In particular, we show that the attention mechanism is equivalent to a double integral operator that enables nonlocal interactions among spatial tokens, with a data-dependent kernel characterizing the inverse mapping from data to the hidden parameter field of the underlying operator. As such, the attention mechanism extracts global prior information from training data generated by multiple systems, and suggests the exploratory space in the form of a nonlinear kernel map. Consequently, NAO can address ill-posedness and rank deficiency in inverse PDE problems by encoding regularization and achieving generalizability. We empirically demonstrate the advantages of NAO over baseline neural models in terms of generalizability to unseen data resolutions and system states. Our work not only suggests a novel neural operator architecture for learning interpretable foundation models of physical systems, but also offers a new perspective towards understanding the attention mechanism.},
 selected={true},
 preview={NAO.png}
