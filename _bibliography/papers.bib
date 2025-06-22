@@ -16,19 +16,6 @@ selected={true},
 preview={nips.png}
 }
 
-@inproceedings{liu2024domain,
-  abbr={NeurIPS},
-  title={Domain agnostic fourier neural operators},
-  author={Liu, Ning and Jafarzadeh, Siavash and Yu, Yue},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2023},
-  pdf={https://proceedings.neurips.cc/paper_files/paper/2023/hash/940a7634dab556b67af15bacd337f7db-Abstract-Conference.html},
-  code={https://github.com/ningliu-iga/DAFNO},
-  abstract = {Fourier neural operators (FNOs) can learn highly nonlinear mappings between function spaces, and have recently become a popular tool for learning responses of complex physical systems. However, to achieve good accuracy and efficiency, FNOs rely on the Fast Fourier transform (FFT), which is restricted to modeling problems on rectangular domains. To lift such a restriction and permit FFT on irregular geometries as well as topology changes, we introduce domain agnostic Fourier neural operator (DAFNO), a novel neural operator architecture for learning surrogates with irregular geometries and evolving domains. The key idea is to incorporate a smoothed characteristic function in the integral layer architecture of FNOs, and leverage FFT to achieve rapid computations, in such a way that the geometric information is explicitly encoded in the architecture. In our empirical evaluation, DAFNO has achieved state-of-the-art accuracy as compared to baseline neural operator models on two benchmark datasets of material modeling and airfoil simulation. To further demonstrate the capability and generalizability of DAFNO in handling complex domains with topology changes, we consider a brittle material fracture evolution problem. With only one training crack simulation sample, DAFNO has achieved generalizability to unseen loading scenarios and substantially different crack patterns from the trained scenario. Our code and data accompanying this paper are available at https://github.com/ningliu-iga/DAFNO.},
-  selected={true},
-  preview={dafno.png}
-}
-
 @inproceedings{yu2024nonlocal,
 abbr={NeurIPS},
 award={Spotlight},
